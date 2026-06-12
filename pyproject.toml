@@ -26,10 +26,12 @@ unit-2 = [
     # Trajectory Mining — populated during unit-2 build
 ]
 unit-3 = [
-    # Dynamic Navigation — populated during unit-3 build
+    # Statistical Baselines — populated during unit-3 build
+    # (was syllabus's Unit 4; renumbered to teach order)
 ]
 unit-4 = [
-    # Statistical Baselines — populated during unit-4 build
+    # Dynamic Navigation — populated during unit-4 build
+    # (was syllabus's Unit 3; renumbered to teach order)
 ]
 unit-5 = [
     # GNNs — populated during unit-5 build

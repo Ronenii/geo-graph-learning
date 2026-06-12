@@ -13,13 +13,18 @@ Each unit has three parts:
 
 ## Units
 
-| # | Topic | Status |
-|---|---|---|
-| 1 | Graph Substrate — Topology & Feature Engineering | _coming soon_ |
-| 2 | Trajectory Mining — Unsupervised Learning & HMM | _coming soon_ |
-| 3 | Dynamic Navigation — Search Algorithms | _coming soon_ |
-| 4 | Statistical Baselines — Time Series | _coming soon_ |
-| 5 | Geometric Deep Learning — Spatio-Temporal GNNs | _coming soon_ |
+Unit numbers follow **teach order** (which is also the unit-number
+order). This means our Unit 3 = Statistical Baselines and our Unit 4 =
+Dynamic Navigation — inverse of the original syllabus PDF. See the
+"Numbering note" at the top of the working outline (instructor-side).
+
+| # | Topic | Capability after this unit | Status |
+|---|---|---|---|
+| 1 | [Graph Substrate](unit-1-graph-substrate/) | Topology metrics as analyzable signal; choosing graph + metric for a question. | _coming soon_ |
+| 2 | [Trajectory Mining](unit-2-trajectory-mining/) | Trajectories on AND off the graph; noise model + inference direction. | _coming soon_ |
+| 3 | [Statistical Baselines](unit-3-statistical-baselines/) | Univariate forecasting baseline + breakeven horizon + spatial gap. | _coming soon_ |
+| 4 | [Dynamic Navigation](unit-4-dynamic-navigation/) | Routing under w(t) + multimodal (road vs. transit) Cost of Anarchy. | _coming soon_ |
+| 5 | [Spatio-Temporal GNNs](unit-5-gnn/) | ST-GNN that earns its complexity; attention interrogation. | _coming soon_ |
 
 Lessons are published as tagged releases (`v-unit1`, `v-unit2`, …). Sync your
 fork to pull new lessons.

@@ -13,7 +13,7 @@ patch the relevant `_unit_N_setup()` here and every notebook recovers.
 LAYERS:
     A) requirements file fetch — pulls `requirements/<unit>.txt` from main.
     B) PyG ecosystem (unit-5) — runtime torch+CUDA detection → matching wheels.
-    C) NetworkX fallback flag for pandana (unit-3) — set in unit-3 setup.
+    C) NetworkX fallback flag for pandana (unit-4) — set in unit-4 setup.
     D) Geopandas/shapely/pyproj/fiona pinning — pinned together in requirements.
 
 This file is intentionally dependency-free. It must run on a fresh Colab
@@ -109,6 +109,11 @@ def _unit_2_setup() -> None:
 
 
 def _unit_3_setup() -> None:
+    """Statistical Baselines — Statsmodels, pmdarima."""
+    pass
+
+
+def _unit_4_setup() -> None:
     """Dynamic Navigation — Pandana (with NetworkX fallback flag).
 
     If pandana fails to install (no Windows wheels, or new Python version),
@@ -116,16 +121,11 @@ def _unit_3_setup() -> None:
     """
     try:
         import pandana  # noqa: F401
-        os.environ["UNIT3_USE_PANDANA"] = "1"
+        os.environ["UNIT4_USE_PANDANA"] = "1"
         print("  pandana available — using accelerated path")
     except ImportError:
-        os.environ["UNIT3_USE_PANDANA"] = "0"
+        os.environ["UNIT4_USE_PANDANA"] = "0"
         print("  pandana unavailable — notebook will use NetworkX fallback")
-
-
-def _unit_4_setup() -> None:
-    """Statistical Baselines — Statsmodels, pmdarima."""
-    pass
 
 
 def _unit_5_setup() -> None:
