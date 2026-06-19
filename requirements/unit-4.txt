@@ -2,4 +2,17 @@
 # Regenerate: bash scripts/export-requirements.sh
 # Colab-slim: ONLY this unit's direct libraries (floors). Colab keeps its
 # own numpy/pandas/scipy — we never repin the core stack (avoids ABI breaks).
-# unit-4 has no dependencies yet.
+osmnx>=2.0
+networkx>=3.0
+geopandas>=1.0
+shapely>=2.0
+pyproj
+rtree
+scipy
+gtfs-kit
+folium
+mapclassify
+branca
+contextily
+pyarrow
+gdown
