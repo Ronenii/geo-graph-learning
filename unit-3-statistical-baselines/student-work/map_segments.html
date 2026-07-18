@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7134da6f490c2120c2a3f8f121876dbc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7134da6f490c2120c2a3f8f121876dbc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7134da6f490c2120c2a3f8f121876dbc = L.map(
+                "map_7134da6f490c2120c2a3f8f121876dbc",
+                {
+                    center: [32.07055, 34.79445],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+
+            
+
+        
+    
+            var tile_layer_3ff85d71f24f736262b2c128f9188418 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3ff85d71f24f736262b2c128f9188418.addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            var poly_line_28ef534722217d4600a0ab88c2ab5dff = L.polyline(
+                [[32.06437, 34.79229], [32.06462889969073, 34.79238094616098], [32.06466321344296, 34.792412460277305], [32.0649451228692, 34.792460604517345], [32.06508, 34.79243]],
+                {"bubblingMouseEvents": true, "color": "#e41a1c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#e41a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            poly_line_28ef534722217d4600a0ab88c2ab5dff.bindTooltip(
+                `<div>
+                     seg 0: Yitzhak Sade → Aminadav
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2e5e6f28cfffed1efb28e6bbc42c0aab = L.polyline(
+                [[32.06508, 34.79243], [32.065196957212734, 34.792534136387125], [32.065433869595516, 34.792564170380395], [32.06557115720913, 34.79257617804999], [32.065766883693335, 34.792641002269974], [32.066031852346505, 34.79271734510625], [32.06626884155042, 34.79274401813607], [32.066485713866975, 34.79276969620564], [32.06672697448437, 34.79283894588111], [32.066915382649256, 34.792852163494906], [32.06734091517014, 34.792949673040056], [32.06755791416242, 34.79302235802402], [32.06785654495841, 34.79306764570236], [32.06799012622709, 34.79314772147306], [32.06817, 34.79318]],
+                {"bubblingMouseEvents": true, "color": "#377eb8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#377eb8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            poly_line_2e5e6f28cfffed1efb28e6bbc42c0aab.bindTooltip(
+                `<div>
+                     seg 1: Aminadav → Dalia Ravikovitch
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4067e754bba258808ed3ef2ff76ef8ea = L.polyline(
+                [[32.06817, 34.79318], [32.06826855812621, 34.7931536971633], [32.06840518582261, 34.79329708367939], [32.0689428903383, 34.79346498211091], [32.06903113671761, 34.79345296311972], [32.069247866796, 34.79352620579151], [32.06938, 34.79357]],
+                {"bubblingMouseEvents": true, "color": "#4daf4a", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4daf4a", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            poly_line_4067e754bba258808ed3ef2ff76ef8ea.bindTooltip(
+                `<div>
+                     seg 2: Dalia Ravikovitch → Vicki Shiran
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_42ca9e7621c99545d2a21080d3c2d2da = L.polyline(
+                [[32.06938, 34.79357], [32.06953012617935, 34.793590726226995], [32.06976376981231, 34.79363323746753], [32.06975, 34.79375]],
+                {"bubblingMouseEvents": true, "color": "#984ea3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#984ea3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            poly_line_42ca9e7621c99545d2a21080d3c2d2da.bindTooltip(
+                `<div>
+                     seg 3: Vicki Shiran → Shlomo Kaplan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_90b02af0dc60259e6e6b88711b08bdc1 = L.polyline(
+                [[32.06975, 34.79375], [32.06991408670117, 34.79371648406186], [32.07010634433077, 34.79375974546923], [32.07031794509479, 34.793825354535386], [32.0704, 34.7939]],
+                {"bubblingMouseEvents": true, "color": "#ff7f00", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff7f00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            poly_line_90b02af0dc60259e6e6b88711b08bdc1.bindTooltip(
+                `<div>
+                     seg 4: Shlomo Kaplan → Tuval
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a7825af1416b6a9b9b1aeae35f93043d = L.polyline(
+                [[32.0704, 34.7939], [32.070605885371045, 34.793986405955835], [32.070774112696256, 34.79405960600709], [32.070968680791026, 34.79414014381615], [32.07119413814315, 34.79418247660956], [32.071391593753184, 34.794273255752564], [32.07162106222433, 34.79435353270196], [32.07165, 34.79442]],
+                {"bubblingMouseEvents": true, "color": "#a65628", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a65628", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            poly_line_a7825af1416b6a9b9b1aeae35f93043d.bindTooltip(
+                `<div>
+                     seg 5: Tuval → HaOmanim
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_8e93f4b6922c68b427fe852bcb7234bc = L.polyline(
+                [[32.07165, 34.79442], [32.071842335114, 34.7944153728404], [32.072053739570784, 34.794509277617145], [32.07228113617736, 34.794627914162035], [32.07238787737238, 34.7946048796293], [32.07245, 34.79466]],
+                {"bubblingMouseEvents": true, "color": "#e41a1c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#e41a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            poly_line_8e93f4b6922c68b427fe852bcb7234bc.bindTooltip(
+                `<div>
+                     seg 6: HaOmanim → HaShalom
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0f375ac28f4c57e7376b83be0cad3d2e = L.polyline(
+                [[32.07245, 34.79466], [32.07268600019546, 34.794827151076106], [32.072848975289354, 34.79489115562162], [32.072994420135416, 34.794944810457345], [32.07330700063671, 34.79506699950615], [32.07347287176253, 34.79508409362905], [32.07366, 34.79516]],
+                {"bubblingMouseEvents": true, "color": "#377eb8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#377eb8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            poly_line_0f375ac28f4c57e7376b83be0cad3d2e.bindTooltip(
+                `<div>
+                     seg 7: HaShalom → Totzeret HaAretz
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7d1122dff8307b0e2256e2df2dc8fbd5 = L.polyline(
+                [[32.07366, 34.79516], [32.07370795595973, 34.7951984796614], [32.073888489668356, 34.79538160197699], [32.07412308905409, 34.795368390910305], [32.07430421809316, 34.79544044067238], [32.07455286815692, 34.79552788660655], [32.07473354187378, 34.79559878128046], [32.074924432042074, 34.7957227440219], [32.07514192592977, 34.79578783082046], [32.07528700063656, 34.79579199950627], [32.07534, 34.79578]],
+                {"bubblingMouseEvents": true, "color": "#4daf4a", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4daf4a", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            poly_line_7d1122dff8307b0e2256e2df2dc8fbd5.bindTooltip(
+                `<div>
+                     seg 8: Totzeret HaAretz → Nachalat Yitzhak
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f5857ebd4e58f5b2ce2933799f121f90 = L.polyline(
+                [[32.07534, 34.79578], [32.0755835331332, 34.7961388682609], [32.075800147613684, 34.79602259888011], [32.0759927794089, 34.79618832043173], [32.07620628397006, 34.79622294937113], [32.07639300098124, 34.79628610168567], [32.07668277952246, 34.79638082282065], [32.07674992186243, 34.796396515402556], [32.07688, 34.79645]],
+                {"bubblingMouseEvents": true, "color": "#984ea3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#984ea3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            poly_line_f5857ebd4e58f5b2ce2933799f121f90.bindTooltip(
+                `<div>
+                     seg 9: Nachalat Yitzhak → Emek Bracha
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8a3fe8d255321347557db3235a6357de = L.circleMarker(
+                [32.06437, 34.79229],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 2}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            circle_marker_8a3fe8d255321347557db3235a6357de.bindTooltip(
+                `<div>
+                     Yitzhak Sade @ 0 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c10e6c370e7242ceb79d66d24fe536c = L.circleMarker(
+                [32.06508, 34.79243],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 2}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            circle_marker_2c10e6c370e7242ceb79d66d24fe536c.bindTooltip(
+                `<div>
+                     Aminadav @ 50 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_425015222ae8a7163452665067a1ee90 = L.circleMarker(
+                [32.06817, 34.79318],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 2}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            circle_marker_425015222ae8a7163452665067a1ee90.bindTooltip(
+                `<div>
+                     Dalia Ravikovitch @ 402 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a07e1e6e407eea1fe4cf2fcc2d64672 = L.circleMarker(
+                [32.06938, 34.79357],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 2}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            circle_marker_1a07e1e6e407eea1fe4cf2fcc2d64672.bindTooltip(
+                `<div>
+                     Vicki Shiran @ 545 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5938a4e6d463e6fdc0a95501b835b58 = L.circleMarker(
+                [32.06975, 34.79375],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 2}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            circle_marker_d5938a4e6d463e6fdc0a95501b835b58.bindTooltip(
+                `<div>
+                     Shlomo Kaplan @ 591 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b8ed1c54c6ff5aea7c469ff73e46729 = L.circleMarker(
+                [32.0704, 34.7939],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 2}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            circle_marker_3b8ed1c54c6ff5aea7c469ff73e46729.bindTooltip(
+                `<div>
+                     Tuval @ 663 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1cb7454729ae49f25aa9501f5e27d7b = L.circleMarker(
+                [32.07165, 34.79442],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 2}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            circle_marker_d1cb7454729ae49f25aa9501f5e27d7b.bindTooltip(
+                `<div>
+                     HaOmanim @ 810 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d91fc18e3fac65924cecc021d8e5fd0d = L.circleMarker(
+                [32.07245, 34.79466],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 2}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            circle_marker_d91fc18e3fac65924cecc021d8e5fd0d.bindTooltip(
+                `<div>
+                     HaShalom @ 904 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8fbece06bb7260940b190e92f0556473 = L.circleMarker(
+                [32.07366, 34.79516],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 2}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            circle_marker_8fbece06bb7260940b190e92f0556473.bindTooltip(
+                `<div>
+                     Totzeret HaAretz @ 1048 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9322b5d39258011ebc213d49d975075d = L.circleMarker(
+                [32.07534, 34.79578],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 2}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            circle_marker_9322b5d39258011ebc213d49d975075d.bindTooltip(
+                `<div>
+                     Nachalat Yitzhak @ 1246 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc17b2de6dd4409cff43156a90443521 = L.circleMarker(
+                [32.07688, 34.79645],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 2}
+            ).addTo(map_7134da6f490c2120c2a3f8f121876dbc);
+        
+    
+            circle_marker_dc17b2de6dd4409cff43156a90443521.bindTooltip(
+                `<div>
+                     Emek Bracha @ 1428 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
